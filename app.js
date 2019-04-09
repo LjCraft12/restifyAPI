@@ -11,7 +11,7 @@ server.use(restify.plugins.bodyParser());
 // Protect routes unless it is the auth route
 server.use(rjwt({
     secret: config.JWT_SECRET
-}).unless({path: ['/auth']}));
+}).unless({path: ['/auth', '/register']}));
 
 // Start the server and connect to mongoose
 server.listen(config.PORT, err => {
