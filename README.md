@@ -1,4 +1,2 @@
 # restifyAPI
-es6 syntax
-async await
-restify
+es6 syntax async await restify
